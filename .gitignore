@@ -2,3 +2,5 @@
 .env
 .mypy_cache
 data
+__pycache__
+chromaDB
