@@ -23,3 +23,6 @@ def buildMarketIndex():
 
 if __name__ == "__main__":
     buildMarketIndex()
+
+
+# this file is being used to write pdf to translate and to store that into chromadb
