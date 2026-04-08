@@ -2,7 +2,7 @@ import config
 from langchain_groq import ChatGroq
 from langchain_classic.agents import AgentExecutor, create_react_agent
 from langchain_core.prompts import PromptTemplate 
-from tooluse import getRetriverTool
+from tooluse import getRetriverTool 
 
 def agentSetup():
     llm = ChatGroq(
