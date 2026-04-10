@@ -10,7 +10,7 @@ Traditional PDF readers often lose context or fail to connect related data point
 
 • Reason: Use the ReAct (Reason + Act) framework to decide when to search and how to interpret findings.
 
-• Retrieve: Utilize ChromaDB and semantic embeddings for high-speed, relevant data fetching.
+• Retrieve: Utilize PineconeDB and semantic embeddings for high-speed, relevant data fetching.
 
 • Execute: Leverage Llama 3.3 (70B) via Groq for near-instant, high-reasoning responses.
 
@@ -20,7 +20,7 @@ Traditional PDF readers often lose context or fail to connect related data point
 
 • LLM: Groq Cloud (llama-3.3-70b-versatile)
 
-• Vector Database: ChromaDB
+• Vector Database: PineconeDB
 
 • Embeddings: all-MiniLM-L6-v2
 
@@ -34,10 +34,12 @@ we need GROQ API KEY for this project
 
 ## Setting up Environment
 
-first create .env file in the root of this project and add GROQ_API_KEY
+first create .env file in the root of this project and add GROQ_API_KEY, PINE_API_KEY, indexName
 
 ```
 GROQ_API_KEY=YOUR_API_KEY
+PINE_API_KEY=YOUR_PINECONE_API_KEY
+indexName=YOUR_INDEX_NAME
 ```
 
 ## Create and Activate Virtual Environment
